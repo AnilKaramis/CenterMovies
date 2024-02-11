@@ -17,7 +17,14 @@ struct MainViewModel {
         return 10
     }
     func getData() {
-        
+        APICaller.getCenterMovies { result in
+            switch result {
+            case .success(let data):
+                print("Top Tredning Counts:\(data.results.count)")
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
 

@@ -24,6 +24,7 @@ class MainViewController:UIViewController {
         view.addSubview(movieTable)
         
         MakeConstraint()
+        setupTableView()
     }
     func setupTableView() {
         self.title = "Main View"
