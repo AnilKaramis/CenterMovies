@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController:UIViewController {
     //MARK: -Variables
-    var viewModel = MainViewModal()
+    var viewModel = MainViewModel()
     
     //MARK: - Patterns
     let movieTable:UITableView = {
@@ -43,11 +43,11 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.numberOfRows(in: section)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return viewModel.numberOfSections()
     }
     
     func registerCells() {
