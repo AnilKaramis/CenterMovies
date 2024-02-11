@@ -149,7 +149,13 @@
 		A5275C892B790B0D0045A61B /* CenterMovies */ = {
 			isa = PBXGroup;
 			children = (
-				A5275CD02B794D010045A61B /* Delegates */,
+				A5275C8A2B790B0D0045A61B /* AppDelegate.swift */,
+				A5275C8C2B790B0D0045A61B /* SceneDelegate.swift */,
+				A5275C8E2B790B0D0045A61B /* ViewController.swift */,
+				A5275C902B790B0D0045A61B /* Main.storyboard */,
+				A5275C932B790B0E0045A61B /* Assets.xcassets */,
+				A5275C952B790B0E0045A61B /* LaunchScreen.storyboard */,
+				A5275C982B790B0E0045A61B /* Info.plist */,
 				A5275CBD2B790B940045A61B /* Main-ViewModels */,
 				A5275CBC2B790B8A0045A61B /* Models */,
 				A5275CBB2B790B680045A61B /* Services */,
@@ -206,20 +212,6 @@
 				A5275CC42B79140E0045A61B /* MainViewModel.swift */,
 			);
 			path = "Main-ViewModels";
-			sourceTree = "<group>";
-		};
-		A5275CD02B794D010045A61B /* Delegates */ = {
-			isa = PBXGroup;
-			children = (
-				A5275C8A2B790B0D0045A61B /* AppDelegate.swift */,
-				A5275C8C2B790B0D0045A61B /* SceneDelegate.swift */,
-				A5275C8E2B790B0D0045A61B /* ViewController.swift */,
-				A5275C902B790B0D0045A61B /* Main.storyboard */,
-				A5275C932B790B0E0045A61B /* Assets.xcassets */,
-				A5275C952B790B0E0045A61B /* LaunchScreen.storyboard */,
-				A5275C982B790B0E0045A61B /* Info.plist */,
-			);
-			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -652,6 +644,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6HX5P2M97J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CenterMovies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -681,6 +674,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6HX5P2M97J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CenterMovies/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

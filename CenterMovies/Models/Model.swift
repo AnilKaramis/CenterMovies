@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 // MARK: - Welcome
-struct Movies: Codable {
+struct MoviesModel: Codable {
     let page: Int
     let results: [Details]
     let totalPages, totalResults: Int
