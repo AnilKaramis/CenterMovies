@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 struct MainViewModel {
+    var isLoading: Observable <Bool> = Observable(value: false)
+    var dataSource: MoviesModel?
     
     func numberOfSections() -> Int {
         return 1

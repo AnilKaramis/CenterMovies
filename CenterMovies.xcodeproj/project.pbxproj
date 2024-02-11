@@ -23,6 +23,7 @@
 		A5275CC52B79140E0045A61B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5275CC42B79140E0045A61B /* MainViewModel.swift */; };
 		A5275CC72B7914610045A61B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5275CC62B7914610045A61B /* MainViewController.swift */; };
 		A5275CCF2B794C8D0045A61B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5275CCE2B794C8D0045A61B /* Model.swift */; };
+		A566FA242B796F67001B0A81 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FA232B796F67001B0A81 /* Observable.swift */; };
 		C229AB035EA06BB5C9FD8056 /* Pods_CenterMovies_CenterMoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CD26E198BCC0CC5F019556 /* Pods_CenterMovies_CenterMoviesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		A5275CC42B79140E0045A61B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		A5275CC62B7914610045A61B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A5275CCE2B794C8D0045A61B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A566FA232B796F67001B0A81 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		B19BE21E5345680545083B62 /* Pods-CenterMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterMoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-CenterMoviesTests/Pods-CenterMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4FC113416E5AED8788BA986 /* Pods-CenterMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterMovies.release.xcconfig"; path = "Target Support Files/Pods-CenterMovies/Pods-CenterMovies.release.xcconfig"; sourceTree = "<group>"; };
 		F9CD26E198BCC0CC5F019556 /* Pods_CenterMovies_CenterMoviesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CenterMovies_CenterMoviesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				A5275CC42B79140E0045A61B /* MainViewModel.swift */,
+				A566FA232B796F67001B0A81 /* Observable.swift */,
 			);
 			path = "Main-ViewModels";
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				A5275C8F2B790B0D0045A61B /* ViewController.swift in Sources */,
 				A5275CBF2B7913B50045A61B /* Service.swift in Sources */,
 				A5275C8B2B790B0D0045A61B /* AppDelegate.swift in Sources */,
+				A566FA242B796F67001B0A81 /* Observable.swift in Sources */,
 				A5275CC52B79140E0045A61B /* MainViewModel.swift in Sources */,
 				A5275CC32B7913DC0045A61B /* MainView.swift in Sources */,
 				A5275C8D2B790B0D0045A61B /* SceneDelegate.swift in Sources */,

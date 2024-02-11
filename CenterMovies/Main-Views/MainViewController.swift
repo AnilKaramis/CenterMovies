@@ -17,11 +17,17 @@ class MainViewController:UIViewController {
         var table = UITableView()
         return table
     }()
+    let indicatorView : UIActivityIndicatorView = {
+        var indicator = UIActivityIndicatorView()
+//        indicator.startAnimating()
+        return indicator
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.addSubview(movieTable)
+        view.addSubview(indicatorView)
         
         MakeConstraint()
         setupTableView()
@@ -31,6 +37,22 @@ class MainViewController:UIViewController {
         self.movieTable.delegate = self
         self.movieTable.dataSource = self
         registerCells()
+    }
+//    Indicator
+    func bindViewModel() {
+        viewModel.isLoading.bind { [weak self] isLoading in
+            guard let self = self, let isLoading = isLoading else {
+                return
+            }
+            DispatchQueue.main.async {
+                if isLoading {
+                    self.indicatorView.startAnimating()
+                }
+                else {
+                    self.indicatorView.stopAnimating()
+                }
+            }
+        }
     }
 }
 // MARK: - Extensions
