@@ -17,5 +17,6 @@ extension MainViewController {
         indicatorView.snp.makeConstraints { make in
             make.center.equalToSuperview()
         }
+       
     }
 }

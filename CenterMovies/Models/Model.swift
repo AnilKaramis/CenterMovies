@@ -27,7 +27,7 @@ struct Details: Codable {
     let backdropPath: String
     let id: Int
     let title: String
-    let originalLanguage: OriginalLanguage
+//    let originalLanguage: OriginalLanguage
     let originalTitle, overview, posterPath: String
     let mediaType: MediaType
     let genreIDS: [Int]
@@ -41,7 +41,7 @@ struct Details: Codable {
         case adult
         case backdropPath = "backdrop_path"
         case id, title
-        case originalLanguage = "original_language"
+//        case originalLanguage = "original_language"
         case originalTitle = "original_title"
         case overview
         case posterPath = "poster_path"
@@ -59,8 +59,8 @@ enum MediaType: String, Codable {
     case movie = "movie"
 }
 
-enum OriginalLanguage: String, Codable {
-    case en = "en"
-    case fr = "fr"
-    case ko = "ko"
-}
+//enum OriginalLanguage: String, Codable {
+//    case en = "en"
+//    case fr = "fr"
+//    case ko = "ko"
+//}

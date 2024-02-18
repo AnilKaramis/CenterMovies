@@ -11,6 +11,7 @@ import UIKit
 struct NetworkConstant {
     static let API_KEY = "https://api.themoviedb.org/3/trending/movie/day?api_key=af067a44d06ee3786eb8c2581fd911ff"
     static let baseURL = "https://api.themoviedb.org"
+    static let imageAddress = "https://image.tmdb.org/t/p/original/"
 }
 
 // MARK: - Enums

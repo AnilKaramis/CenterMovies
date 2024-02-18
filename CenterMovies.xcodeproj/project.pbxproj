@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		46001CBAFC297BCC786A3024 /* Pods_CenterMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35614EC28FE84DB1A60D2A5 /* Pods_CenterMovies.framework */; };
 		51DB6F36BCFB8D68A4F7E899 /* Pods_CenterMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B21E38416F6951A1F4023ED /* Pods_CenterMoviesTests.framework */; };
+		A50FA4632B7D06F0005339D1 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50FA4622B7D06F0005339D1 /* MainViewCell.xib */; };
 		A5275C8B2B790B0D0045A61B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5275C8A2B790B0D0045A61B /* AppDelegate.swift */; };
 		A5275C8D2B790B0D0045A61B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5275C8C2B790B0D0045A61B /* SceneDelegate.swift */; };
 		A5275C8F2B790B0D0045A61B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5275C8E2B790B0D0045A61B /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		A5275CC72B7914610045A61B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5275CC62B7914610045A61B /* MainViewController.swift */; };
 		A5275CCF2B794C8D0045A61B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5275CCE2B794C8D0045A61B /* Model.swift */; };
 		A566FA242B796F67001B0A81 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FA232B796F67001B0A81 /* Observable.swift */; };
+		A566FA262B798229001B0A81 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FA252B798229001B0A81 /* TableViewCellModel.swift */; };
+		A566FA2A2B79E66B001B0A81 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FA292B79E66B001B0A81 /* MainViewCell.swift */; };
+		A566FA382B7A2091001B0A81 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FA372B7A2091001B0A81 /* CellView.swift */; };
 		C229AB035EA06BB5C9FD8056 /* Pods_CenterMovies_CenterMoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9CD26E198BCC0CC5F019556 /* Pods_CenterMovies_CenterMoviesUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +55,7 @@
 		625BDBBB49389583B6D57ACF /* Pods-CenterMovies-CenterMoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterMovies-CenterMoviesUITests.debug.xcconfig"; path = "Target Support Files/Pods-CenterMovies-CenterMoviesUITests/Pods-CenterMovies-CenterMoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B21E38416F6951A1F4023ED /* Pods_CenterMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CenterMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35614EC28FE84DB1A60D2A5 /* Pods_CenterMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CenterMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50FA4622B7D06F0005339D1 /* MainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
 		A5275C872B790B0D0045A61B /* CenterMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CenterMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5275C8A2B790B0D0045A61B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5275C8C2B790B0D0045A61B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +75,9 @@
 		A5275CC62B7914610045A61B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A5275CCE2B794C8D0045A61B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A566FA232B796F67001B0A81 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		A566FA252B798229001B0A81 /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		A566FA292B79E66B001B0A81 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
+		A566FA372B7A2091001B0A81 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		B19BE21E5345680545083B62 /* Pods-CenterMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterMoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-CenterMoviesTests/Pods-CenterMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4FC113416E5AED8788BA986 /* Pods-CenterMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CenterMovies.release.xcconfig"; path = "Target Support Files/Pods-CenterMovies/Pods-CenterMovies.release.xcconfig"; sourceTree = "<group>"; };
 		F9CD26E198BCC0CC5F019556 /* Pods_CenterMovies_CenterMoviesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CenterMovies_CenterMoviesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +159,10 @@
 		A5275C892B790B0D0045A61B /* CenterMovies */ = {
 			isa = PBXGroup;
 			children = (
+				A5275CBB2B790B680045A61B /* Services */,
+				A5275CBC2B790B8A0045A61B /* Models */,
+				A5275CBD2B790B940045A61B /* Main-ViewModels */,
+				A566FA272B79E5FE001B0A81 /* Views */,
 				A5275C8A2B790B0D0045A61B /* AppDelegate.swift */,
 				A5275C8C2B790B0D0045A61B /* SceneDelegate.swift */,
 				A5275C8E2B790B0D0045A61B /* ViewController.swift */,
@@ -158,10 +170,6 @@
 				A5275C932B790B0E0045A61B /* Assets.xcassets */,
 				A5275C952B790B0E0045A61B /* LaunchScreen.storyboard */,
 				A5275C982B790B0E0045A61B /* Info.plist */,
-				A5275CBD2B790B940045A61B /* Main-ViewModels */,
-				A5275CBC2B790B8A0045A61B /* Models */,
-				A5275CBB2B790B680045A61B /* Services */,
-				A5275CBA2B790B4B0045A61B /* Main-Views */,
 			);
 			path = CenterMovies;
 			sourceTree = "<group>";
@@ -183,13 +191,13 @@
 			path = CenterMoviesUITests;
 			sourceTree = "<group>";
 		};
-		A5275CBA2B790B4B0045A61B /* Main-Views */ = {
+		A5275CBA2B790B4B0045A61B /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
 				A5275CC22B7913DC0045A61B /* MainView.swift */,
 				A5275CC62B7914610045A61B /* MainViewController.swift */,
 			);
-			path = "Main-Views";
+			path = MainViews;
 			sourceTree = "<group>";
 		};
 		A5275CBB2B790B680045A61B /* Services */ = {
@@ -213,8 +221,28 @@
 			children = (
 				A5275CC42B79140E0045A61B /* MainViewModel.swift */,
 				A566FA232B796F67001B0A81 /* Observable.swift */,
+				A566FA252B798229001B0A81 /* TableViewCellModel.swift */,
 			);
 			path = "Main-ViewModels";
+			sourceTree = "<group>";
+		};
+		A566FA272B79E5FE001B0A81 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A566FA282B79E63C001B0A81 /* MainViewsCell */,
+				A5275CBA2B790B4B0045A61B /* MainViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A566FA282B79E63C001B0A81 /* MainViewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				A566FA292B79E66B001B0A81 /* MainViewCell.swift */,
+				A566FA372B7A2091001B0A81 /* CellView.swift */,
+				A50FA4622B7D06F0005339D1 /* MainViewCell.xib */,
+			);
+			path = MainViewsCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +330,7 @@
 				};
 			};
 			buildConfigurationList = A5275C822B790B0D0045A61B /* Build configuration list for PBXProject "CenterMovies" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -328,6 +356,7 @@
 			files = (
 				A5275C972B790B0E0045A61B /* LaunchScreen.storyboard in Resources */,
 				A5275C942B790B0E0045A61B /* Assets.xcassets in Resources */,
+				A50FA4632B7D06F0005339D1 /* MainViewCell.xib in Resources */,
 				A5275C922B790B0D0045A61B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,11 +486,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5275CC72B7914610045A61B /* MainViewController.swift in Sources */,
+				A566FA262B798229001B0A81 /* TableViewCellModel.swift in Sources */,
+				A566FA2A2B79E66B001B0A81 /* MainViewCell.swift in Sources */,
 				A5275C8F2B790B0D0045A61B /* ViewController.swift in Sources */,
 				A5275CBF2B7913B50045A61B /* Service.swift in Sources */,
 				A5275C8B2B790B0D0045A61B /* AppDelegate.swift in Sources */,
 				A566FA242B796F67001B0A81 /* Observable.swift in Sources */,
 				A5275CC52B79140E0045A61B /* MainViewModel.swift in Sources */,
+				A566FA382B7A2091001B0A81 /* CellView.swift in Sources */,
 				A5275CC32B7913DC0045A61B /* MainView.swift in Sources */,
 				A5275C8D2B790B0D0045A61B /* SceneDelegate.swift in Sources */,
 				A5275CCF2B794C8D0045A61B /* Model.swift in Sources */,
