@@ -9,69 +9,60 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainViewCell" rowHeight="224" id="xhB-Ij-HRn" userLabel="MainViewCell" customClass="MainViewCell" customModule="CenterMovies" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="571" height="224"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainViewCell" rowHeight="216" id="nF6-rw-2Sk" customClass="MainViewCell" customModule="CenterMovies" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="553" height="216"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xhB-Ij-HRn" id="Cbp-Ak-2Ac" customClass="MainViewCell" customModule="CenterMovies" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="571" height="224"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nF6-rw-2Sk" id="Ih4-fQ-eWF">
+                <rect key="frame" x="0.0" y="0.0" width="553" height="216"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" id="6la-XN-K7Q" customClass="MainViewCell" customModule="CenterMovies" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="571" height="224"/>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUf-WU-uO2">
+                        <rect key="frame" x="0.0" y="0.0" width="553" height="216"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="GLz-pO-8fw">
-                                <rect key="frame" x="28" y="21" width="240" height="181"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cjl-CW-tiU">
+                                <rect key="frame" x="254" y="41" width="211" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO"  id="nOD-Cd-bdj">
-                                <rect key="frame" x="318" y="21" width="153" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO"  id="ttE-g9-6L6">
-                                <rect key="frame" x="318" y="163" width="42" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="P7r-gT-ca1"/>
-                                    <constraint firstAttribute="height" constant="39" id="ugA-aP-alz"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rWR-eg-JDd">
+                                <rect key="frame" x="254" y="86" width="211" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO"  id="4Ft-uD-Chb">
-                                <rect key="frame" x="318" y="127" width="99" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="pD1-vS-7c5">
+                                <rect key="frame" x="0.0" y="0.0" width="233" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cMW-FB-YPf">
+                                <rect key="frame" x="254" y="132" width="54" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="nOD-Cd-bdj" firstAttribute="leading" secondItem="GLz-pO-8fw" secondAttribute="trailing" constant="50" id="Clx-zX-Ade"/>
-                            <constraint firstItem="nOD-Cd-bdj" firstAttribute="top" secondItem="GLz-pO-8fw" secondAttribute="top" id="EPa-ka-qsB"/>
-                            <constraint firstItem="ttE-g9-6L6" firstAttribute="bottom" secondItem="GLz-pO-8fw" secondAttribute="bottom" id="Kqi-gE-x4b"/>
-                            <constraint firstItem="ttE-g9-6L6" firstAttribute="top" secondItem="4Ft-uD-Chb" secondAttribute="bottom" constant="8" symbolic="YES" id="aFa-V8-1JC"/>
-                            <constraint firstItem="4Ft-uD-Chb" firstAttribute="leading" secondItem="ttE-g9-6L6" secondAttribute="leading" id="e01-pT-Whd"/>
-                            <constraint firstItem="nOD-Cd-bdj" firstAttribute="leading" secondItem="4Ft-uD-Chb" secondAttribute="leading" id="gRW-T7-5Gf"/>
-                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="6la-XN-K7Q" firstAttribute="top" secondItem="Cbp-Ak-2Ac" secondAttribute="top" id="2iU-5q-0oS"/>
-                    <constraint firstItem="6la-XN-K7Q" firstAttribute="leading" secondItem="Cbp-Ak-2Ac" secondAttribute="leading" id="PVm-Hq-OGk"/>
-                    <constraint firstAttribute="bottom" secondItem="6la-XN-K7Q" secondAttribute="bottom" id="Pz3-JG-Yfq"/>
-                    <constraint firstAttribute="trailing" secondItem="6la-XN-K7Q" secondAttribute="trailing" id="eUB-3I-Ja5"/>
+                    <constraint firstItem="EUf-WU-uO2" firstAttribute="top" secondItem="Ih4-fQ-eWF" secondAttribute="top" id="42p-Jt-Qgq"/>
+                    <constraint firstAttribute="trailing" secondItem="EUf-WU-uO2" secondAttribute="trailing" id="ZfA-Tp-DVR"/>
+                    <constraint firstItem="EUf-WU-uO2" firstAttribute="leading" secondItem="Ih4-fQ-eWF" secondAttribute="leading" id="g0r-7Y-mCe"/>
+                    <constraint firstAttribute="bottom" secondItem="EUf-WU-uO2" secondAttribute="bottom" id="gy9-Lb-St8"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="backView" destination="6la-XN-K7Q" id="Twq-lD-UuH"/>
-                <outlet property="dateLabel" destination="ttE-g9-6L6" id="4JE-tG-cRP"/>
-                <outlet property="movieImageView" destination="GLz-pO-8fw" id="l3t-T6-KQd"/>
-                <outlet property="nameLabel" destination="nOD-Cd-bdj" id="AX7-6t-rd8"/>
-                <outlet property="rateLabel" destination="ttE-g9-6L6" id="4ds-4q-onR"/>
+                <outlet property="backView" destination="EUf-WU-uO2" id="oD3-6F-i8N"/>
+                <outlet property="dateLabel" destination="rWR-eg-JDd" id="xvS-bx-SLQ"/>
+                <outlet property="movieImageView" destination="pD1-vS-7c5" id="m1f-Fh-qLr"/>
+                <outlet property="nameLabel" destination="Cjl-CW-tiU" id="nwd-yJ-Qkz"/>
+                <outlet property="rateLabel" destination="cMW-FB-YPf" id="UcZ-t9-hgC"/>
             </connections>
-            <point key="canvasLocation" x="-86.25954198473282" y="30.985915492957748"/>
+            <point key="canvasLocation" x="223.66412213740458" y="80.281690140845072"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -20,10 +20,12 @@ class MainViewCell: UITableViewCell {
     }
     
     @IBOutlet weak var backView: UIView!
-    @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var rateLabel: UILabel!
+    
+    
     
     
 //    private let nameLabel:UILabel = {
@@ -74,15 +76,16 @@ class MainViewCell: UITableViewCell {
         self.rateLabel.text = viewModel.rating
         self.movieImageView.sd_setImage(with: viewModel.imageUrl)
     }
-    
-    
 }
-////MARK: SetupLayout
-//
-//extension MainViewCell {
-//    func MainViewCellLayouts() {
-//        nameLabel.snp.makeConstraints { make in
-//            make.
-//        }
-//    }
-//}
+extension UIView {
+    //MovieTable Property
+    
+    func round(_ radius: CGFloat = 10) {
+        self.layer.cornerRadius = radius
+        self.clipsToBounds = true
+    }
+    func addBorder(color: UIColor, width: CGFloat) {
+        self.layer.borderWidth = width
+        self.layer.borderColor = color.cgColor
+    }
+}
