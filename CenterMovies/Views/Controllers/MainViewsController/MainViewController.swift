@@ -16,7 +16,6 @@ class MainViewController:UIViewController {
     //MARK: - Patterns
     let movieTable:UITableView = {
         var table = UITableView()
-        table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
     let indicatorView : UIActivityIndicatorView = {

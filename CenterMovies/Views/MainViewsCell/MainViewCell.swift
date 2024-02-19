@@ -60,11 +60,12 @@ class MainViewCell: UITableViewCell {
     }
     
     func setupCellUI() {
+        // made optional
         
-        backView.addBorder(color: .label, width: 1)
-        backView.round(10)
+        backView?.addBorder(color: .label, width: 1)
+        backView?.round(10)
         
-        movieImageView.round(5)
+        movieImageView?.round(5)
     }
     
     func setupCell(viewModel: CenterMoviesViewCell) {
