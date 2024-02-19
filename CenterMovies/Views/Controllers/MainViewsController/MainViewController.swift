@@ -16,6 +16,7 @@ class MainViewController:UIViewController {
     //MARK: - Patterns
     let movieTable:UITableView = {
         var table = UITableView()
+        table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
     let indicatorView : UIActivityIndicatorView = {
@@ -69,11 +70,16 @@ class MainViewController:UIViewController {
     }
     func bindCellDataSource() {
         viewModel.cellDataSource.bind { [weak self] movies in
-            guard let self = self, let movies = movies else {
+            guard let self, let movies else {
                 return
             }
             self.cellDataSource = movies
             self.reloadTableView()
+        }
+    }
+    func openDetails(movieId: Int) {
+        guard let movie = viewModel.retriveMovie(withId: movieId) else {
+            return
         }
     }
 }

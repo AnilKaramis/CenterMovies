@@ -26,8 +26,10 @@ class CenterMoviesViewCell {
         self.rating = "\(movie.voteAverage)"
         self.imageUrl = makeImageURL(movie.posterPath)
     }
+    
     private func makeImageURL(_ imageCode: String) -> URL? {
         URL(string: "\(NetworkConstant.imageAddress)\(imageCode)")
        
     }
 }
+// compact map , map , filter , highlvl function
