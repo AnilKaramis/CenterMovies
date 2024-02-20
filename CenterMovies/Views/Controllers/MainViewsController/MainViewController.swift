@@ -30,7 +30,6 @@ class MainViewController:UIViewController {
         view.addSubview(movieTable)
         view.addSubview(indicatorView)
         
-        
         setupTableView()
         MakeConstraint()
         bindCellDataSource()
@@ -47,7 +46,6 @@ class MainViewController:UIViewController {
         self.movieTable.delegate = self
         self.movieTable.dataSource = self
         self.movieTable.backgroundColor = .clear
-        
         
         registerCells()
     }
@@ -79,6 +77,11 @@ class MainViewController:UIViewController {
     func openDetails(movieId: Int) {
         guard let movie = viewModel.retriveMovie(withId: movieId) else {
             return
+        }
+        DispatchQueue.main.async {
+            let detailsViewModel = DetailsMovieViewModel(movie: movie)
+            let controller = DetailsViewController(viewModel: detailsViewModel)
+            self.navigationController?.pushViewController(controller, animated: true)
         }
     }
 }
@@ -114,7 +117,8 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         return 150
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        return
+        let movieId = cellDataSource[indexPath.row].id
+        self.openDetails(movieId: movieId)
     }
     
     // Reload the table view on the main queue

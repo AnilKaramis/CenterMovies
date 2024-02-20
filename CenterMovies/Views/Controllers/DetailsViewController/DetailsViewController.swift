@@ -6,24 +6,37 @@
 //
 
 import UIKit
+import SDWebImage
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var movieImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    //View model
+    
+    var viewModel: DetailsMovieViewModel
+    
+    init(viewModel: DetailsMovieViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: "DetailsViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        configView()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func configView() {
+        self.title = "Movie Details"
+        titleLabel.text = viewModel.movieTitle
+        movieImageView.sd_setImage(with: viewModel.movieImage)
+        descriptionTextView.text = viewModel.movieDescription
     }
-    */
-
 }
+

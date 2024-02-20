@@ -22,8 +22,9 @@
 		A544A9C52B831A3100881BA7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544A9C32B831A3100881BA7 /* MainViewController.swift */; };
 		A544A9C62B831A3100881BA7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A544A9C42B831A3100881BA7 /* MainViewController.xib */; };
 		A544A9CB2B831B5400881BA7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544A9C92B831B5400881BA7 /* DetailsViewController.swift */; };
-		A544A9CC2B831B5400881BA7 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A544A9CA2B831B5400881BA7 /* DetailsViewController.xib */; };
 		A544A9CE2B83528B00881BA7 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A544A9CD2B83528B00881BA7 /* MainViewCell.xib */; };
+		A544A9D02B83699400881BA7 /* DetailsMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544A9CF2B83699400881BA7 /* DetailsMovieViewModel.swift */; };
+		A544AA122B84C01300881BA7 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A544A9CA2B831B5400881BA7 /* DetailsViewController.xib */; };
 		A566FA242B796F67001B0A81 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FA232B796F67001B0A81 /* Observable.swift */; };
 		A566FA262B798229001B0A81 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FA252B798229001B0A81 /* TableViewCellModel.swift */; };
 		A566FA2A2B79E66B001B0A81 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A566FA292B79E66B001B0A81 /* MainViewCell.swift */; };
@@ -73,6 +74,7 @@
 		A544A9C92B831B5400881BA7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A544A9CA2B831B5400881BA7 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		A544A9CD2B83528B00881BA7 /* MainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
+		A544A9CF2B83699400881BA7 /* DetailsMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewModel.swift; sourceTree = "<group>"; };
 		A566FA232B796F67001B0A81 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		A566FA252B798229001B0A81 /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
 		A566FA292B79E66B001B0A81 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		A5275C892B790B0D0045A61B /* CenterMovies */ = {
 			isa = PBXGroup;
 			children = (
+				A544A9D12B83770400881BA7 /* Observables */,
 				A5275CBB2B790B680045A61B /* Services */,
 				A5275CBC2B790B8A0045A61B /* Models */,
 				A5275CBD2B790B940045A61B /* Main-ViewModels */,
@@ -216,8 +219,8 @@
 			isa = PBXGroup;
 			children = (
 				A5275CC42B79140E0045A61B /* MainViewModel.swift */,
-				A566FA232B796F67001B0A81 /* Observable.swift */,
 				A566FA252B798229001B0A81 /* TableViewCellModel.swift */,
+				A544A9CF2B83699400881BA7 /* DetailsMovieViewModel.swift */,
 			);
 			path = "Main-ViewModels";
 			sourceTree = "<group>";
@@ -238,6 +241,14 @@
 				A544A9CA2B831B5400881BA7 /* DetailsViewController.xib */,
 			);
 			path = DetailsViewController;
+			sourceTree = "<group>";
+		};
+		A544A9D12B83770400881BA7 /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				A566FA232B796F67001B0A81 /* Observable.swift */,
+			);
+			path = Observables;
 			sourceTree = "<group>";
 		};
 		A566FA272B79E5FE001B0A81 /* Views */ = {
@@ -367,10 +378,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A544AA122B84C01300881BA7 /* DetailsViewController.xib in Resources */,
 				A5275C972B790B0E0045A61B /* LaunchScreen.storyboard in Resources */,
 				A5275C942B790B0E0045A61B /* Assets.xcassets in Resources */,
 				A544A9C62B831A3100881BA7 /* MainViewController.xib in Resources */,
-				A544A9CC2B831B5400881BA7 /* DetailsViewController.xib in Resources */,
 				A544A9CE2B83528B00881BA7 /* MainViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +519,7 @@
 				A5275CC52B79140E0045A61B /* MainViewModel.swift in Sources */,
 				A5275CC32B7913DC0045A61B /* MainView.swift in Sources */,
 				A544A9CB2B831B5400881BA7 /* DetailsViewController.swift in Sources */,
+				A544A9D02B83699400881BA7 /* DetailsMovieViewModel.swift in Sources */,
 				A5275CCF2B794C8D0045A61B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

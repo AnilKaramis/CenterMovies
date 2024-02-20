@@ -9,7 +9,8 @@ import Foundation
 import SnapKit
 
 extension MainViewController {
-
+// Constraints
+    
     func MakeConstraint() {
         movieTable.snp.makeConstraints {
             $0.edges.equalToSuperview()

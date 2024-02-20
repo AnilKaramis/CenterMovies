@@ -46,5 +46,5 @@ class APICaller {
         guard let url = URL(string: "\(NetworkConstant.API_KEY)") else {
             return URL(string: NetworkConstant.baseURL)!}
         return url
-        }
+    }
 }

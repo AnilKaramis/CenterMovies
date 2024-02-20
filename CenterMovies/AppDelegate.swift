@@ -21,6 +21,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         return true
     }
-    
-    // MARK: UISceneSession Lifecycle
 }

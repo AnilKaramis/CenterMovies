@@ -18,15 +18,11 @@ class MainViewCell: UITableViewCell {
     public static func register() -> UINib {
         UINib(nibName: "MainViewCell", bundle: nil)
     }
-    
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var movieImageView: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var rateLabel: UILabel!
-    
-    
-    
     
 //    private let nameLabel:UILabel = {
 //        var name = UILabel()
@@ -69,7 +65,6 @@ class MainViewCell: UITableViewCell {
         
         movieImageView?.round(5)
     }
-    
     func setupCell(viewModel: CenterMoviesViewCell) {
         self.nameLabel.text = viewModel.title
         self.dateLabel.text = viewModel.date
