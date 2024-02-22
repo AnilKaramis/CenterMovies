@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class DetailsMovieViewModel {
     
 var movieData: Details
@@ -14,13 +15,14 @@ var movieTitle: String
 var movieDescription: String
 var movieId: Int
 
-init(movie: Details) {
-    self.movieData = movie
-    self.movieId = movie.id
-    self.movieTitle = movie.title 
-    self.movieDescription = movie.overview 
-    self.movieImage = makeImageURL(movie.backdropPath)
-}
+    init(movie: Details) {
+        self.movieData = movie
+        self.movieId = movie.id
+        self.movieTitle = movie.title
+        self.movieDescription = movie.overview
+        self.movieImage = makeImageURL(movie.backdropPath)
+    }
+    
     private func makeImageURL(_ imageCode: String) -> URL? {
         URL(string: "\(NetworkConstant.imageAddress)\(imageCode)")
     }

@@ -9,16 +9,20 @@ import Foundation
 import UIKit
 
 class MainViewController:UIViewController {
-    //MARK: -Variables
+    
+    // MARK: - Variables
+    
     var viewModel: MainViewModel = MainViewModel()
     var cellDataSource: [CenterMoviesViewCell] = []
     
-    //MARK: - Patterns
-    let movieTable:UITableView = {
+    // MARK: - Patterns
+    
+    let movieTable: UITableView = {
         var table = UITableView()
         return table
     }()
-    let indicatorView : UIActivityIndicatorView = {
+    
+    let indicatorView: UIActivityIndicatorView = {
         var indicator = UIActivityIndicatorView()
         //        indicator.startAnimating()
         return indicator
@@ -34,6 +38,7 @@ class MainViewController:UIViewController {
         MakeConstraint()
         bindCellDataSource()
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -41,6 +46,7 @@ class MainViewController:UIViewController {
         viewModel.getData()
         bindIndicator()
     }
+    
     func setupTableView() {
         self.title = "Top Trending Movies"
         self.movieTable.delegate = self
@@ -49,10 +55,11 @@ class MainViewController:UIViewController {
         
         registerCells()
     }
-    //    Indicator
+
+    // Indicator
     func bindIndicator() {
         viewModel.isLoading.bind { [weak self] isLoading in
-            guard let self = self, let isLoading = isLoading else {
+            guard let self, let isLoading else {
                 return
             }
             DispatchQueue.main.async {
@@ -65,6 +72,7 @@ class MainViewController:UIViewController {
             }
         }
     }
+
     func bindCellDataSource() {
         viewModel.cellDataSource.bind { [weak self] movies in
             guard let self, let movies else {
@@ -74,6 +82,7 @@ class MainViewController:UIViewController {
             self.reloadTableView()
         }
     }
+
     func openDetails(movieId: Int) {
         guard let movie = viewModel.retriveMovie(withId: movieId) else {
             return
@@ -85,11 +94,15 @@ class MainViewController:UIViewController {
         }
     }
 }
+
 // MARK: - Extensions
 
 extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath
+    ) -> UITableViewCell {
         guard let cell = movieTable.dequeueReusableCell(withIdentifier: MainViewCell.identifier, for: indexPath) as? MainViewCell else {
             return UITableViewCell()
         }
@@ -100,7 +113,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(
+        _ tableView: UITableView,
+        numberOfRowsInSection section: Int
+    ) -> Int {
         return viewModel.numberOfRows(in: section)
     }
     
